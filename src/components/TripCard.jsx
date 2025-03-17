@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 const TripCard = ({ tripProp }) => {
 
+    // Destrutturazione viaggio
     const { id, destinazione, data_inizio, data_fine } = tripProp;
 
     return (
