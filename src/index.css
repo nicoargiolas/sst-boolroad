@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: red;
-    color: black;
-}
 
-body {
-    background-color: aqua;
+/* container con dati di homepage */
+.container-home{
+    margin: 20px;
+    border: 2px solid black;
+}
+.img-set{
+    width: 400px;
 }

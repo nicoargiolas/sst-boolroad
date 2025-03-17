@@ -1,6 +1,6 @@
 const UserCard = ({ userProp }) => {
 
-    const { id, nome, cognome, mail, telefono, codice_fiscale } = userProp;
+    const { nome, cognome, mail, telefono, codice_fiscale } = userProp;
 
     return (
         <div>

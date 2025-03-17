@@ -28,11 +28,19 @@ const TripPage = () => {
 
     useEffect(fetchUsers, [])
 
+
+    
     return (
         <>
-            <div>
-                {renderUsers()}
-            </div>
+            <form action="submit">
+                <input type="text" placeholder="Cerca"/>
+                <button>Invia</button>
+                <div>
+                    {renderUsers()}
+                </div>
+
+            </form>
+
         </>
 
     )
