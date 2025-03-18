@@ -1,0 +1,8 @@
+/* AddTripPage.css */
+.add-trip-container .form-control {
+    border-radius: 10px;
+  }
+  
+  .add-trip-container .btn {
+    margin-top: 10px;
+  }
