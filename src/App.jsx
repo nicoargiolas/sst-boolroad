@@ -1,7 +1,8 @@
 // Importazione pagine
 import HomePage from './pages/HomePage';
 import TripPage from './pages/TripPage';
-// import AddTripPage from './pages/AddTripPage';
+import AddTripPage from './pages/AddTripPage';
+
 
 // Importazione layout
 import DefaultLayout from './layouts/DeafultLayout';
@@ -19,7 +20,7 @@ function App() {
         <Route element={<DefaultLayout />}>
           <Route index path="/" element={<HomePage />} />
           <Route index path="/trip/:id" element={<TripPage />} />
-          {/* <Route index path="/trip/add" element={<AddTripPage />} /> */}
+          <Route index path="/trip/add" element={<AddTripPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

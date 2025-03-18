@@ -1,6 +1,9 @@
 // Importazione use state e use effect
 import { useState, useEffect } from "react"
 
+// importo link
+import { Link } from "react-router-dom";
+
 import TripCard from './../components/TripCard';
 
 
@@ -17,22 +20,17 @@ const HomePage = () => {
 
     useEffect(fetchTrips, [])
 
-    const renderTrips = () => {
-        return trips.map(
-            trip => {
-                return (
-                    <div key={trip.id} >
-                        <TripCard tripProp={trip} />
-                    </div>
-                )
-            }
-        )
-    }
+    // andiamo a gestire la funzione che ci permettere di aggiungere un nuovo viaggio
+
+   
 
     return (
         <>
             <div>
-                {renderTrips()}
+                {trips.map(trip => (
+                    <TripCard tripProp={trip} key={trip.id} />
+                ))}
+                <Link to={"/trip/add"}> <button>ADD TRIP</button> </Link>
             </div>
         </>
     )
