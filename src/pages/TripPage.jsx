@@ -30,22 +30,25 @@ const TripPage = () => {
 
 
     return (
-        <>  
+        <>
             {/* Gestiamo il onSubmit  */}
             <form onSubmit={(e) => event.preventDefault()}>
-                
-                <input type="text" 
-                value={search} 
-                placeholder="Cerca"
-                
-                // Gestiamo onChange prendendo il value che sarebbe quello che inserisce l utente
-                onChange={(e) => setSearch(e.target.value)}/>
-                
-                <button>Invia</button>
+                <div className="search-bar">
+                    <input className="search" type="text"
+                        value={search}
+                        placeholder="Cerca"
+
+                        // Gestiamo onChange prendendo il value che sarebbe quello che inserisce l utente
+                        onChange={(e) => setSearch(e.target.value)} />
+                    <button>Invia</button>
+                </div>
+
+
+
             </form>
 
             <div>
-                {filteredUsers.map(user => <UserCard key={user.id} userProp={user} /> )}
+                {filteredUsers.map(user => <UserCard key={user.id} userProp={user} />)}
             </div>
 
         </>
