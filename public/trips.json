@@ -4,6 +4,7 @@
         "destinazione": "Parigi, Francia",
         "data_inizio": "2025-06-15",
         "data_fine": "2025-06-22",
+        "image":"./paris.jpg",
         "partecipanti": [
             {
                 "id": 101,
@@ -44,6 +45,7 @@
         "destinazione": "New York, USA",
         "data_inizio": "2025-07-10",
         "data_fine": "2025-07-20",
+        "image":"./new-york.jpg",
         "partecipanti": [
             {
                 "id": 201,
@@ -84,6 +86,7 @@
         "destinazione": "Tokyo, Giappone",
         "data_inizio": "2025-09-05",
         "data_fine": "2025-09-15",
+        "image":"./tokyo.jpg",
         "partecipanti": [
             {
                 "id": 301,
@@ -124,6 +127,7 @@
         "destinazione": "Sydney, Australia",
         "data_inizio": "2025-11-12",
         "data_fine": "2025-11-25",
+        "image":"./sidney.jpg",
         "partecipanti": [
             {
                 "id": 401,

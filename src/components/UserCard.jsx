@@ -1,12 +1,16 @@
 const UserCard = ({ userProp }) => {
 
-    const { id, nome, cognome, mail, telefono, codice_fiscale } = userProp;
+    const { nome, cognome, mail, telefono, codice_fiscale } = userProp;
 
     return (
+
         <>
             <div className="user-list-container">
                 <div className="user-card">
-                    <h2 className="user-summary">{nome} {cognome}</h2>
+                    <div className="user-card-header">
+                        <h2 className="user-summary">{nome} {cognome}</h2>
+                        <button className="contact-button">Contatta</button>
+                    </div>
                     <div className="user-details">
                         <p>Email: {mail}</p>
                         <p>Telefono: {telefono}</p>
@@ -15,6 +19,7 @@ const UserCard = ({ userProp }) => {
                 </div>
             </div>
         </>
+
     )
 }
 

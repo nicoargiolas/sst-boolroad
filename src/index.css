@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: red;
-    color: black;
+/* container con dati di homepage */
+.container-home {
+    margin: 20px;
+    border: 2px solid black;
 }
+
+.img-set {
+    width: 400px;
+}
+
 
 .user-list-container {
     max-width: 800px;
@@ -25,8 +31,6 @@ header {
 }
 
 .user-card {
-    background: black;
-    color: white;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -67,6 +71,29 @@ header {
     border-color: black;
 }
 
+.user-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.contact-button:hover {
+    background-color: #45a049;
+}
+
+
+
 /* Responsive */
 @media screen and (max-width: 600px) {
     .user-list {
@@ -75,5 +102,13 @@ header {
 
     .user-card {
         padding: 10px;
+    }
+
+
+
+    /* container con dati di homepage */
+    .container-home {
+        margin: 20px;
+        border: 2px solid black;
     }
 }

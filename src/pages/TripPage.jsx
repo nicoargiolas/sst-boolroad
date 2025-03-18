@@ -4,10 +4,14 @@ import { Link, useParams, useNavigate } from "react-router-dom"
 import UserCard from "../components/UserCard";
 
 const TripPage = () => {
-
+    // Recuperiamo id dall url
     const { id } = useParams();
 
+    // variabile di stato per array di oggetti
     const [users, setUsers] = useState([]);
+
+    // andiamo a gestire il form 
+    const [search, setSearch] = useState("");
 
     const fetchUsers = () => {
         fetch("/trips.json")
@@ -19,20 +23,31 @@ const TripPage = () => {
             })
             .catch(err => console.error("Errore nel caricamento dei dettagli dei partecipanti:", err));
     };
-
-    const renderUsers = () => {
-        return users.map(
-            user => <UserCard key={user.id} userProp={user} />
-        )
-    }
-
     useEffect(fetchUsers, [])
 
+    // Filtraggio per input
+    const filteredUsers = users.filter((user) => user.nome.toLowerCase().includes(search.toLowerCase()));
+
+
     return (
-        <>
+        <>  
+            {/* Gestiamo il onSubmit  */}
+            <form onSubmit={(e) => event.preventDefault()}>
+                
+                <input type="text" 
+                value={search} 
+                placeholder="Cerca"
+                
+                // Gestiamo onChange prendendo il value che sarebbe quello che inserisce l utente
+                onChange={(e) => setSearch(e.target.value)}/>
+                
+                <button>Invia</button>
+            </form>
+
             <div>
-                {renderUsers()}
+                {filteredUsers.map(user => <UserCard key={user.id} userProp={user} /> )}
             </div>
+
         </>
 
     )
