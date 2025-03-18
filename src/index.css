@@ -213,6 +213,10 @@ a {
     max-width: 800px;
 }
 
+.search-bar h2{
+    margin-top: 20px;
+}
+
 .search {
     border-radius: 10px;
     border: none;
@@ -317,7 +321,7 @@ button:hover {
 }
 
 .container-background {
-    height: 100vh;
+    /* height: 100vh; */
     margin-left: 20px;
     margin-right: 20px;
 }

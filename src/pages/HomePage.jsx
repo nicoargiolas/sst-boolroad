@@ -18,7 +18,7 @@ const HomePage = () => {
 
     useEffect(fetchTrips, [])
 
-    // andiamo a gestire la funzione che ci permettere di aggiungere un nuovo viaggio
+    
 
 
 
