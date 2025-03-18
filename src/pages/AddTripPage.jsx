@@ -46,7 +46,7 @@ export default function AddTripPage() {
       </div>
 
       <button className="btn btn-submit">Crea viaggio</button>
-      <Link to={"/"}> <button className="btn">RITORNA IN HOME</button>  </Link>
+      <Link to={"/"}> <button className="btn btn-submit">RITORNA IN HOME</button>  </Link>
     </form>
   )
 }

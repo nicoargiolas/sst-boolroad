@@ -33,7 +33,7 @@ const TripPage = () => {
         <>
             <div className="container-background">
                 {/* Gestiamo il onSubmit  */}
-                <form onSubmit={(e) => event.preventDefault()}>
+                <form onSubmit={(e) => event.preventDefault()} className="form-set">
                     <div className="search-bar">
                         <input className="search" type="text"
                             value={search}
