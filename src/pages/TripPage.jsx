@@ -25,7 +25,7 @@ const TripPage = () => {
     };
     useEffect(fetchUsers, [])
 
-    // Filtraggio per input
+    // Filtraggio per input ci permette di scrivere nell input e constatare che con .includes scriviamo la prima lettera ci cerchera i nomi che hanno quella lettera
     const filteredUsers = users.filter((user) => user.nome.toLowerCase().includes(search.toLowerCase()));
 
 
