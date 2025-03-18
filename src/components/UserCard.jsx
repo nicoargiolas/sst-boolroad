@@ -30,7 +30,7 @@ const UserCard = ({ userProp }) => {
                             <button className="close-button" onClick={() => setShowContact(false)}>
                                 &times;
                             </button>
-                            <h3>Contatta {nome} {cognome}</h3>
+                            <h3>Contatta <i class="fa-regular fa-circle-user"></i> {nome} {cognome}</h3>
                             <div className="contact-buttons">
                                 <button className="contact-btn">Chiama</button>
                                 <button className="contact-btn">Email</button>

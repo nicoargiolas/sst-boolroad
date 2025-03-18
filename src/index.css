@@ -10,6 +10,8 @@
     border: 2px solid black;
 }
 
+
+
 .img-set {
     width: 400px;
 }
@@ -23,15 +25,18 @@
 
 .search {
     border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    margin-top: 2%;
 }
 
 .search-bar button {
     margin-left: 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
-    padding: 4px 7px;
-    font-size: 10px;
+    padding: 7px 20px;
+    font-size: 14px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -41,7 +46,7 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #333;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -63,12 +68,14 @@
 
 .user-card:hover .user-details {
     display: block;
+    color: white;
 }
 
 
 .user-summary {
     font-size: 18px;
     font-weight: bold;
+    color: white;
 }
 
 .user-details {
@@ -101,8 +108,8 @@
 }
 
 .contact-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     padding: 8px 15px;
     font-size: 14px;
@@ -115,10 +122,19 @@
     background-color: #45a049;
 }
 
+button:hover {
+    background-color: #45a049;
+}
+
+.container-background {
+    background-image: url('../public/background_image.jpg');
+    height: 100vh;
+}
 
 /* Disabilita hover quando il popup è aperto */
 .no-hover .user-card:hover .user-details {
     display: none;
+
 }
 
 /* Lightbox per il contatto */
@@ -136,7 +152,8 @@
 }
 
 .contact-box {
-    background: white;
+    background: #333;
+    color: white;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -168,8 +185,8 @@
     border-radius: 50px;
     border: none;
     cursor: pointer;
-    background: #4CAF50;
-    color: white;
+    background: white;
+    color: black;
     transition: 0.3s;
 }
 
