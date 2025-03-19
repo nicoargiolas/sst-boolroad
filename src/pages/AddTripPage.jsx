@@ -25,25 +25,6 @@ export default function AddTripPage() {
         <input type="url" className="form-control" id="image" name="image" required />
       </div>
 
-      <div className="form-group">
-        <label  className="form-label">Partecipanti</label>
-        
-        <div className="input-group">
-          
-          <input 
-            type="text" 
-            className="form-control" 
-            placeholder="Aggiungi nuovo partecipante"
-          />
-          
-          <button 
-            type="button" 
-            className="btn btn-add-participant">
-            Aggiungi partecipante
-          </button>
-        
-        </div>
-      </div>
 
       <button className="btn btn-submit">Crea viaggio</button>
       <Link to={"/"}> <button className="btn btn-submit">RITORNA IN HOME</button>  </Link>
